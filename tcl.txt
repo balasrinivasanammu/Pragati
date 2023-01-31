@@ -1,0 +1,6 @@
+START TRANSACTION;
+INSERT INTO employees(ename,email)VALUES('test3','test3@gmail.com'),('test2','test2@gmail.com');
+COMMIT;
+DELETE FROM employees WHERE eid=42
+ROLLBACK;
+SELECT * FROM employees
